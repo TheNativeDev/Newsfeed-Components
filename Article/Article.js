@@ -3,7 +3,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -23,8 +23,8 @@ const data = [
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -43,8 +43,8 @@ const data = [
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -71,8 +71,8 @@ const data = [
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -85,6 +85,24 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "Best Javascript Libraries of 2018",
+    date: "Dec 30th, 2018",
+    firstParagraph: `Lucas ipsum dolor sit amet skywalker jade dantooine skywalker darth maul anakin droid skywalker anakin. Wampa yoda coruscant 
+          endor skywalker hoth. Qui-gon moff lando leia twi'lek ahsoka. Yoda sith yavin darth hutt. Qui-gonn jade dooku anakin boba. Chewbacca darth boba 
+          mara. Mandalore ackbar jinn mandalore. Coruscant padmé leia jango qui-gon organa dantooine sebulba. Mon boba vader tatooine darth fett fett 
+          wedge leia. Mustafar watto antilles moff padmé yoda jinn. Binks solo padmé calrissian hutt mace.`,
+
+    secondParagraph: `Jar solo obi-wan windu cade darth lars moff. Twi'lek ben organa solo solo skywalker. Palpatine yoda yoda dagobah palpatine 
+          skywalker luke. Skywalker luuke fett darth mandalorians skywalker ackbar. Solo kamino anakin darth vader antilles. Han padmé skywalker luke 
+          tusken raider obi-wan wedge moff. Bespin bothan owen ahsoka hutt obi-wan dooku mon skywalker. Jabba windu darth baba ben mustafar. Jango darth 
+          dantooine jabba padmé fett c-3p0. Skywalker hutt darth skywalker jade. Hutt jango yoda windu droid organa moff windu`,
+
+    thirdParagraph: `Sidious jar leia darth kessel sidious ewok palpatine antilles. Dagobah kenobi k-3po yoda qui-gon hoth grievous c-3p0. Tatooine 
+          thrawn han hutt jabba. Grievous padmé hoth ackbar palpatine amidala wampa skywalker. Boba coruscant jade hutt antilles kessel skywalker darth. 
+          Ewok darth amidala yoda mara hutt fisto jar. Jawa kenobi darth gamorrean cade antilles anakin solo darth. Binks organa coruscant darth darth mon 
+          padmé darth darth. Leia dantooine obi-wan antilles. Obi-wan ackbar fett mon tatooine luke mustafar.`
   }
 ];
 
@@ -93,22 +111,76 @@ const data = [
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
-
     {three separate paragraph elements}
-
     <span class='expandButton'></span>
   </div>
-
   Hint: You will need to use createElement more than once here!
-
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
-
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
-
   Step 3: return the entire component.
-
   Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
-
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
 */
+
+function createArticle(title, date, p1, p2, p3) {
+  const divArticle = document.createElement("div");
+  const titleArticle = document.createElement("h2");
+  const dateArticle = document.createElement("p");
+  const closeArticle = document.createElement("button");
+  const p1Article = document.createElement("p");
+  const p2Article = document.createElement("p");
+  const p3Article = document.createElement("p");
+  const spanArticle = document.createElement("span");
+
+  divArticle.append(titleArticle);
+  divArticle.append(dateArticle);
+  divArticle.append(closeArticle);
+  divArticle.append(p1Article);
+  divArticle.append(p2Article);
+  divArticle.append(p3Article);
+  divArticle.append(spanArticle);
+
+  divArticle.classList.add("article");
+  dateArticle.classList.add("date");
+  spanArticle.classList.add("expandButton");
+  closeArticle.classList.add("close");
+
+  titleArticle.textContent = title;
+  dateArticle.textContent = date;
+  closeArticle.textContent = "Close Article";
+  p1Article.textContent = p1;
+  p2Article.textContent = p2;
+  p3Article.textContent = p3;
+  spanArticle.textContent = "Expand";
+
+  closeArticle.addEventListener("click", e => {
+    divArticle.style.display = "none";
+  });
+
+  spanArticle.addEventListener("click", e => {
+    divArticle.classList.toggle("article-open");
+    if (divArticle.classList.contains("article-open")) {
+      spanArticle.textContent = "Collapse";
+      TweenMax.fromTo(divArticle, 1, { height: "50px" }, { height: "520px" });
+    } else {
+      spanArticle.textContent = "Expand";
+      TweenMax.fromTo(divArticle, 0.5, { height: "520px" }, { height: "50px" });
+    }
+  });
+
+  return divArticle;
+}
+
+const container = document.querySelector(".articles");
+
+data.forEach(article => {
+  container.appendChild(
+    createArticle(
+      article.title,
+      article.date,
+      article.firstParagraph,
+      article.secondParagraph,
+      article.thirdParagraph
+    )
+  );
+});
